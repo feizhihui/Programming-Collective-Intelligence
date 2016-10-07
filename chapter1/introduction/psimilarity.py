@@ -40,7 +40,8 @@ def sim_pearson(prefs, p1, p2):
     for item in prefs[p1]:
         if item in prefs[p2]: si[item] = 1
 
-    n = 1.0 * len(si)
+    n = float(len(si))
+    if n == 0: return 1
     sum1 = sum([prefs[p1][item] for item in si])
     sum2 = sum([prefs[p2][item] for item in si])
     sum1Sq = sum([pow(prefs[p1][item], 2) for item in si])
@@ -61,7 +62,8 @@ def sim_pearson2(prefs, p1, p2):
     si = {}
     for item in prefs[p1]:
         if item in prefs[p2]: si[item] = 1
-    n = 1.0 * len(si)
+    n = float(len(si))
+    if n == 0: return 1
     avg1 = sum([prefs[p1][item] for item in si]) / n
     avg2 = sum([prefs[p2][item] for item in si]) / n
 
