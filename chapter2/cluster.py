@@ -1,5 +1,9 @@
 # encoding=utf-8
 
+"""
+层次聚类
+"""
+
 from math import sqrt
 from PIL import Image, ImageDraw
 
@@ -16,7 +20,7 @@ class Bicluster:
 def readfile(filename):
     lines = [line for line in open(filename)]
 
-    # 第一行时列标题
+    # 第一行是列标题
     colnames = lines[0].strip().split('\t')[1:]
     rownames = []
     data = []
