@@ -84,7 +84,7 @@ export PYTHONPATH=path_to_repo/sru
 https://github.com/taolei87/sru/graphs/contributors
 
 ## To-do
--[ ] ReLU activation
--[ ] support multi-GPU (context change)
--[ ] Layer normalization + residual to compare with highway connection (current version)
+- [ ] ReLU activation
+- [ ] support multi-GPU (context change)
+- [ ] Layer normalization + residual to compare with highway connection (current version)
   
